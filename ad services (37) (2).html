@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD Drive Service | Self-Drive Bike & Car Rentals in Lucknow</title>
+    <style>
+        :root {
+            --primary: #d90429;
+            --dark: #2b2d42;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--dark);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--light);
+            padding-bottom: 0.5rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+        }
+
+        .contact-info a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 1.2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.4rem;
+            font-weight: 600;
+        }
+
+        .form-group input, 
+        .form-group select, 
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus, 
+        .form-group select:focus, 
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 2px rgba(217, 4, 41, 0.2);
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        .btn-submit {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.2s;
+        }
+
+        .btn-submit:hover {
+            background-color: #b8001f;
+        }
+
+        ul.rules {
+            list-style-type: none;
+        }
+
+        ul.rules li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        ul.rules li::before {
+            content: "•";
+            color: var(--primary);
+            font-weight: bold;
+            font-size: 1.2rem;
+            position: absolute;
+            left: 0;
+            top: -2px;
+        }
+
+        .highlight-box {
+            background-color: #ffe6e6;
+            border-left: 4px solid var(--primary);
+            padding: 1rem;
+            margin-top: 1rem;
+            border-radius: 4px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        table, th, td {
+            border: 1px solid #dee2e6;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--dark);
+            color: white;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AD DRIVE SERVICE</h1>
+        <p>Self Drive Vehicle Rental Service in Lucknow</p>
+    </header>
+
+    <div class="container">
+        
+        <!-- Contact & Overview -->
+        <div class="grid">
+            <div class="card contact-info">
+                <h2>Contact Information</h2>
+                <p><strong>Location:</strong> Gomti Nagar, Kathauta, Lucknow[cite: 1]</p>
+                <p><strong>Phone Numbers:</strong></p>
+                <p>📞 <a href="tel:7388421594">7388421594</a>[cite: 1]</p>
+                <p>📞 <a href="tel:8853830668">8853830668</a>[cite: 1]</p>
+                <p><strong>Payment Methods Accepted:</strong> Cash, UPI, Bank Transfer[cite: 1]</p>
+            </div>
+
+            <div class="card">
+                <h2>Key Rates & Limits</h2>
+                <table>
+                    <tr>
+                        <th>Parameter</th>
+                        <th>Details</th>
+                    </tr>
+                    <tr>
+                        <td>Daily Distance Limit</td>
+                        <td>100 km[cite: 1]</td>
+                    </tr>
+                    <tr>
+                        <td>Extra km Charge</td>
+                        <td>₹3 per km[cite: 1]</td>
+                    </tr>
+                    <tr>
+                        <td>Security Amount (Outstation)</td>
+                        <td>₹2,000 (Outside Lucknow)[cite: 1]</td>
+                    </tr>
+                    <tr>
+                        <td>Late Return Charge</td>
+                        <td>₹100 extension charge[cite: 1]</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <!-- Rental Enquiry Form (Sends directly to Email) -->
+        <div class="card" style="margin-bottom: 2rem;">
+            <h2>Vehicle Rental Enquiry / Booking Request</h2>
+            <form action="https://formspree.io/f/kuldeepapsjrc@gmail.com" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fullname">Full Name *</label>
+                        <input type="text" id="fullname" name="Full Name" placeholder="Enter your full name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" name="Phone Number" placeholder="Enter your phone number" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="vehicle_type">Vehicle Type *</label>
+                        <select id="vehicle_type" name="Vehicle Type" required>
+                            <option value="" disabled selected>Select vehicle type</option>
+                            <option value="Bike">Bike</option>
+                            <option value="Car">Car</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="travel_type">Travel Destination *</label>
+                        <select id="travel_type" name="Travel Destination" required>
+                            <option value="Within Lucknow">Within Lucknow</option>
+                            <option value="Outside Lucknow">Outside Lucknow (Outstation)</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="pickup_date">Handover / Pickup Date *</label>
+                        <input type="date" id="pickup_date" name="Pickup Date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="return_date">Take-over / Return Date *</label>
+                        <input type="date" id="return_date" name="Return Date" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="notes">Additional Requirements / Notes</label>
+                    <textarea id="notes" name="Additional Notes" rows="3" placeholder="Mention any specific bike model preference or queries..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-submit">Submit Booking Enquiry</button>
+            </form>
+        </div>
+
+        <!-- Terms and Conditions -->
+        <div class="card" style="margin-bottom: 2rem;">
+            <h2>Terms & Conditions (नियम एवं शर्तें)</h2>
+            <ul class="rules">
+                <li><strong>Vehicle Responsibility:</strong> Complete responsibility of the vehicle lies with the customer for the entire duration of the rental period.[cite: 1]</li>
+                <li><strong>Early Returns:</strong> No refund will be issued if the vehicle is returned before the scheduled booking date.[cite: 1]</li>
+                <li><strong>Authorized Driver:</strong> Only the person to whom the vehicle is officially handed over is authorized to drive. If found with anyone else, the vehicle will be treated as stolen, and appropriate legal action will be taken.[cite: 1]</li>
+                <li><strong>Damage Policy:</strong> Any damage caused to the vehicle will be deducted directly from the security deposit or must be paid immediately by the customer.[cite: 1]</li>
+                <li><strong>Extension Charge:</strong> Failing to return the vehicle on time at the end of the booking period will incur an extension fee of ₹100.[cite: 1]</li>
+                <li><strong>Rent Adjustment:</strong> Rental charges cannot be adjusted against the security deposit.[cite: 1]</li>
+                <li><strong>Traffic Violation / Challan:</strong> Security deposit will be refunded within 24 hours after checking for traffic challans. Any challan incurred during the rental period must be paid by the customer.[cite: 1]</li>
+                <li><strong>Outstation Rentals:</strong> If traveling outside Lucknow, the mandatory security deposit is ₹2,000.[cite: 1]</li>
+                <li><strong>Kilometer Limit:</strong> Driving limit is capped at 100 km. Additional distance will be charged at ₹3 per kilometer.[cite: 1]</li>
+                <li><strong>Jurisdiction:</strong> This agreement is governed by the laws of India, and any legal disputes are subject to the jurisdiction of courts in Lucknow.[cite: 1]</li>
+            </ul>
+        </div>
+
+        <!-- Recovery Policy -->
+        <div class="card">
+            <h2>Non-Return & Recovery Policy (रिकवरी शुल्क)</h2>
+            <p>If the vehicle is not returned on the agreed date and time, the company reserves the right to recover the vehicle according to its regulations[cite: 1]. The customer agrees to pay the following non-refundable recovery charges[cite: 1]:</p>
+            
+            <div class="highlight-box">
+                <p><strong>• Local Lucknow Recovery Fee:</strong> ₹2,500[cite: 1]</p>
+                <p><strong>• Outside City (District) Recovery Fee:</strong> ₹5,000[cite: 1]</p>
+                <p><strong>• Outside Station (State) Recovery Fee:</strong> ₹10,000[cite: 1]</p>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; AD Drive Service - Gomti Nagar, Kathauta, Lucknow[cite: 1]. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
